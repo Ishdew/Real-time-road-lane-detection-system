@@ -4,11 +4,13 @@
 
 * The primary goal of this project is to develop a Road Lane Detection System that accurately identifies and tracks road lanes in real-time using computer vision and machine learning techniques. This system is intended to enhance the safety and efficiency of autonomous vehicles and advanced driver-assistance systems (ADAS).
 
-## Steps involved
-* Capturing and decoding video file
-* Grayscale conversion of image
-* Reduce noise
-* Canny Edge Detector
-* Region of Interest
-* Hough Line Transform
-* Draw lines on the Image or Video
+## Steps Involved
+* Input image
+* Create the camera caliberation matrix and distortion coefficient and undistort the image
+* Applying perspective transform
+* Thresholding to extract the lane lines
+* Histogram peak detection
+* Applying sliding window search algorithm ot detect lane lines
+* Apply curve fitting
+* Overlay the detected lane lines and output the image
+
